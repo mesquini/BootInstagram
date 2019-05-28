@@ -14,7 +14,10 @@ namespace BootSorteio
 {
     public partial class Main : Form
     {
-        IWebDriver driver; 
+        IWebDriver driver;
+        ChromeOptions options;
+
+
         private ToolTip meuToolTip;
 
         int repete = 5;
@@ -24,7 +27,6 @@ namespace BootSorteio
         public Main()
         {
             InitializeComponent();
-
             meuToolTip = new ToolTip();
             txtSenha.PasswordChar = '*';
             houver();
@@ -32,11 +34,14 @@ namespace BootSorteio
 
         private void btGerar_Click(object sender, EventArgs e)
         {
-            
 
             if (valida() == true)
             {
-                driver = new ChromeDriver();
+                options = new ChromeOptions();
+                options.AddArguments("headless");
+                options.AddArguments("window-size=1200x600");
+
+                driver = new ChromeDriver(options);
                 login(email, senha, url);
                 Thread.Sleep(1000);
                 checkBox_verifica();
