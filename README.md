@@ -1,7 +1,6 @@
 # BootInstagram
 
-## Para executar o projeto segue os passos a baixo:
-```
-> descompactar o arquivo
-> executar o *BootSorteio.exe*
- ```
+<h4> Para executar o projeto segue os passos a baixo: </h4>
+
+<p> > descompactar o arquivo <strong> .rar </strong></p>
+<p> > executar o <strong> BootSorteio.exe </strong></p>
