@@ -1,4 +1,4 @@
-# BootInstagram
+# Bot Comments photos Instagram
 
 <h4> Para executar o projeto segue os passos a baixo: </h4>
 
